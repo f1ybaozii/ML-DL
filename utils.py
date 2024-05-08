@@ -51,3 +51,12 @@ def display(x_test, y_test, regressor):
     plt.scatter(x_test, y_test)
     plt.plot(xx, yy, c='red')
     plt.show()
+
+def sigmoid(x):
+    '''The sigmoid function'''
+    return np.exp(x) / (1 + np.exp(x))
+
+def relu(x):
+    '''The ReLU function'''
+    return np.maximum(0,x)
+
